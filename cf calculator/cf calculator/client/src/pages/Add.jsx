@@ -77,4 +77,20 @@ export default function Add() {
             </button>
           </div>
 
-
+          {totalCarbonFootprint !== 0 ? (
+            <div className="output-container">
+              <div className="output">
+                <p>summary:</p>
+                <h6> Electricity Usage {electricityUsage}</h6>
+                <h6> Natural Gas Usage {naturalGasUsage}</h6>
+                <h6> Car Mileage {carMileage}</h6>
+                <h6> Flight Mileage {flightMileage}</h6>
+                <h4 style={{color: "red"}}> Your carbon footprint is {totalCarbonFootprint} metric tons of CO2 equivalent</h4>
+              </div>
+            </div>
+          ) : <p className='output'>Enter values for summary...</p>}
+        </div>
+      </div>
+    </>
+  );
+}
