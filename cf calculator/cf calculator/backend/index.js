@@ -54,3 +54,7 @@ db.query(q_createTable, (err, data) => {
 });
 })
 
+app.listen(8800, () => {
+    console.log('connected to backend')
+})
+
