@@ -48,17 +48,7 @@ export default function Add() {
         result: totalCarbonFootprint.toFixed(2),
       });
       // console.log(data);
-      setCalc({
-        electricityUsage: '',
-        naturalGasUsage: '',
-        carMileage: '',
-        flightMileage: '',
-        result: '0',
-      });
-    } catch (err) {
-      console.log(err);
-    }
-  };
+      
 
   // console.log(calc);
 
