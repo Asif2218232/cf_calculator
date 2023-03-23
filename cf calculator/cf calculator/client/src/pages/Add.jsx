@@ -49,6 +49,19 @@ export default function Add() {
       });
       // console.log(data);
       
+        setCalc({
+        electricityUsage: '',
+        naturalGasUsage: '',
+        carMileage: '',
+        flightMileage: '',
+        result: '0',
+      });
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+      
 
   // console.log(calc);
 
