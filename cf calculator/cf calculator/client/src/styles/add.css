@@ -30,7 +30,10 @@ input::placeholder {
     text-align: center;
 }
 
-
+.add-btn-container{
+    display: flex;
+    justify-content: center;
+}
 .add-btn{
     height: 50px;
     font-family: 'Roboto Mono', monospace;
