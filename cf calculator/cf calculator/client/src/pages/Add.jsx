@@ -31,7 +31,7 @@ export default function Add() {
     const naturalGasCarbon = 11.7 * calc.naturalGasUsage;
     const carCarbon = 0.39 * calc.carMileage;
     const flightCarbon = 0.24 * calc.flightMileage;
-    const totalCarbonFootprint = electricityCarbon + naturalGasCarbon + carCarbon + flightCarbon;
+    const totalCarbonFootprint = electricityCarbon + naturalGasCarbon + carCarbon + flightCarbon; 
 
     setElectricityUsage(electricityCarbon.toFixed(2));
     setNaturalGasUsage(naturalGasCarbon.toFixed(2));
