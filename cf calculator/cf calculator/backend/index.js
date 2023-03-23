@@ -29,18 +29,7 @@ CREATE TABLE IF NOT EXISTS cf_calculation (
 );
 `;
 
-const q_insertData = `
-INSERT INTO cf_calculation (electricityUsage, naturalGasUsage, carMileage, flightMileage, result)
-VALUES (?, ?, ?, ?, ?);
-`;
 
-const values = [
-    req.body.electricityUsage,
-    req.body.naturalGasUsage,
-    req.body.carMileage,
-    req.body.flightMileage,
-    req.body.result
-]
 
 // Execute the CREATE TABLE query
 db.query(q_createTable, (err, data) => {
