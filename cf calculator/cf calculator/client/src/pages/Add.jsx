@@ -4,6 +4,7 @@ import axios from 'axios';
 
 import '../styles/add.css';
 
+
 export default function Add() {
   const [electricityUsage, setElectricityUsage] = useState('');
   const [naturalGasUsage, setNaturalGasUsage] = useState('');
